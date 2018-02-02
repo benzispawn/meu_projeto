@@ -1,0 +1,61 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="uk-flex-middle" uk-grid uk-height-match="target: > div > .uk-card; row: false">
+    <div class="uk-width-3-4@m uk-flex-last@s">
+        <div>
+            <div class="uk-card uk-card-default uk-card-body">
+                <h3 class="uk-card-title">Small</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <button onclick="window.location.href='/contato'" class="uk-button uk-button-text">Saiba Mais</button>
+            </div>
+        </div>
+    </div>
+    <div class="uk-width-1-4@m uk-flex-first@s">
+        <div>
+            <div class="uk-card uk-card-default uk-card-body">
+                <h3 class="uk-card-title">Large</h3>
+                <p>Lorem ipsum dolor sit amet</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="uk-flex-middle" uk-grid uk-height-match="target: > .uk-card">
+    <div class="uk-width-3-4@m uk-flex-last@s">
+        <div>
+            <div class="uk-card uk-card-default uk-card-body">
+                <h3 class="uk-card-title">Small</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <button onclick="window.location.href='/contato'" class="uk-button uk-button-text">Saiba Mais</button>
+            </div>
+        </div>
+    </div>
+    <div class="uk-width-1-4@m uk-flex-first@s">
+        <div>
+            <div class="uk-card uk-card-default uk-card-body">
+                <h3 class="uk-card-title">Large</h3>
+                <p>Lorem ipsum dolor sit amet</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="uk-flex-middle" uk-grid uk-height-match="target: > div > .uk-width-3-4 > div > .uk-card">
+    <div class="uk-width-3-4@m uk-flex-last@s">
+        <div>
+            <div class="uk-card uk-card-default uk-card-body">
+                <h3 class="uk-card-title">Small</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <button onclick="window.location.href='/contato'" class="uk-button uk-button-text">Saiba Mais</button>
+            </div>
+        </div>
+    </div>
+    <div class="uk-width-1-4@m uk-flex-first@s">
+        <div>
+            <div class="uk-card uk-card-default uk-card-body">
+                <h3 class="uk-card-title">Large</h3>
+                <p>Lorem ipsum dolor sit amet</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

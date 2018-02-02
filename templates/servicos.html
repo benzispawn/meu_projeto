@@ -1,0 +1,88 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+    <div class="uk-card-media-left uk-cover-container">
+        <img src="{{url_for('static', filename = 'porco.jpeg')}}" alt="" uk-cover>
+        <canvas width="400" height="133"></canvas>
+    </div>
+    <div>
+        <div class="uk-card-body">
+            <h3 class="uk-card-title">Media Left</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            <button onclick="window.location.href='/contato'" class="uk-button uk-button-text">Quer contratar!</button>
+        </div>
+    </div>
+</div>
+
+<div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+    <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
+        <img src="{{url_for('static', filename = 'bank.jpg')}}" alt="" uk-cover>
+        <canvas width="400" height="133"></canvas>
+    </div>
+    <div>
+        <div class="uk-card-body">
+            <h3 class="uk-card-title">Media Right</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            <button onclick="window.location.href='/contato'" class="uk-button uk-button-text">Quer contratar!</button>
+        </div>
+    </div>
+</div>
+
+<div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+    <div class="uk-card-media-left uk-cover-container">
+        <img src="{{url_for('static', filename = 'coins.jpg')}}" alt="" uk-cover>
+        <canvas width="400" height="133"></canvas>
+    </div>
+    <div>
+        <div class="uk-card-body">
+            <h3 class="uk-card-title">Media Left</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            <button onclick="window.location.href='/contato'" class="uk-button uk-button-text">Quer contratar!</button>
+        </div>
+    </div>
+</div>
+
+<div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+    <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
+        <img src="{{url_for('static', filename = 'world-bank.jpg')}}" alt="" uk-cover>
+        <canvas width="400" height="133"></canvas>
+    </div>
+    <div>
+        <div class="uk-card-body">
+            <h3 class="uk-card-title">Media Right</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            <button onclick="window.location.href='/contato'" class="uk-button uk-button-text">Quer contratar!</button>
+        </div>
+    </div>
+</div>
+
+<div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+    <div class="uk-card-media-left uk-cover-container">
+        <img src="{{url_for('static', filename = 'handshake.jpg')}}" alt="" uk-cover>
+        <canvas width="400" height="133"></canvas>
+    </div>
+    <div>
+        <div class="uk-card-body">
+            <h3 class="uk-card-title">Media Left</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            <button onclick="window.location.href='/contato'" class="uk-button uk-button-text">Quer contratar!</button>
+        </div>
+    </div>
+</div>
+
+<div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+    <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
+        <img src="{{url_for('static', filename = 'un.jpg')}}" alt="" uk-cover>
+        <canvas width="400" height="133"></canvas>
+    </div>
+    <div>
+        <div class="uk-card-body">
+            <h3 class="uk-card-title">Media Right</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            <button onclick="window.location.href='/contato'" class="uk-button uk-button-text">Quer contratar!</button>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

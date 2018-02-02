@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+    <div class="uk-card-media-right uk-cover-container">
+        <img class="uk-responsive-width uk-responsive-height" src="{{url_for('static', filename = 'computador.jpg')}}" alt="Image" uk-cover/>
+        <canvas width="1000" height="800"></canvas>
+    </div>
+    <div class="uk-card-body">
+        <h3 class="uk-card-title">Contato</h3>
+        <form action="{{ url_for('contato') }}" method=post>
+            <fieldset class="uk-fieldset">
+
+                <legend class="uk-legend"></legend>
+
+                {{ form.hidden_tag() }}
+
+                <div class="uk-margin">
+                    {{form.name.label}}
+                    {{ form.name(class="uk-input", placeholder="nome") }}
+                </div>
+
+                <div class="uk-margin">
+                    {{form.email.label}}
+                    {{ form.email(class="uk-input", placeholder="Email") }}
+                </div>
+
+                <div class="uk-margin">
+                    {{form.assunto.label}}
+                    {{ form.assunto(class="uk-input", placeholder="Assunto") }}
+                </div>
+
+                <div class="uk-margin">
+                    {{form.mensagem.label}}
+                    {{ form.mensagem(class="uk-textarea", rows="20", placeholder="Mensagem") }}
+                </div>
+
+                <div class="input submit">
+                  <input type="submit" value="Submit" />
+                </div>
+
+            </fieldset>
+        </form>
+    </div>
+</div>
+{% endblock %}
